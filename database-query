@@ -1,0 +1,15 @@
+
+create database employeeManagementDb;
+use database employeeManagementDb;
+CREATE TABLE employees
+(
+  id int NOT NULL AUTO_INCREMENT,
+  first_name varchar(255) NOT NULL,
+  last_name varchar(255) NOT NULL,
+  email_address varchar(255) NOT NULL,
+  job_name varchar(255) NOT NULL,
+  dep_name varchar(255) NOT NULL,
+  salary_scale varchar(255) NOT NULL,
+  PRIMARY KEY (id)
+  
+);
