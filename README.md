@@ -1,5 +1,5 @@
 # Employment-Management-System
-## Angular-SpringBoot-CRUD-Tutorial
+## Angular-SpringBoot-CRUD-Project
 This is a single page application using Angular as a front-end and Spring boot restful API as a backend.
 
 REST API: This is used to develop CRUD RESTFul APIs for a simple Employee Management System using Spring Boot 2, JPA and MySQL as a database.
