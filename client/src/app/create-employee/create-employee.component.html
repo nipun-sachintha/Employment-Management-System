@@ -1,0 +1,60 @@
+<h3>Create Employee</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">First Name</label>
+      <input type="text" class="form-control" id="firstName" required [(ngModel)]="employee.firstName" name="firstName">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Last Name</label>
+      <input type="text" class="form-control" id="lastName" required [(ngModel)]="employee.lastName" name="lastName">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Email</label>
+      <input type="text" class="form-control" id="emailId" required [(ngModel)]="employee.emailId" name="emailId">
+    </div>
+    <div class="form-group">
+      <label for="name">Job</label>
+      <select class="form-control" id="jobName" required [(ngModel)]="employee.jobName" name="jobName">
+        <option>LabourI</option>
+        <option>LabourII</option>
+        <option>supervisor</option>
+        <option>Engineer</option>
+        <option>Manager</option>
+      </select>
+
+     <!-- <input type="text" class="form-control" id="jobName" required [(ngModel)]="employee.jobName" name="jobName"> -->
+    </div>
+    <div class="form-group">
+      <label for="name">Department</label>
+      <select class="form-control" id="depName" required [(ngModel)]="employee.depName" name="depName">
+        <option>Electrical</option>
+        <option>Electronic</option>
+        <option>Mechanical</option>
+        <option>Chemical</option>
+        <option>Material</option>
+      </select>
+    <!--  <input type="text" class="form-control" id="depName" required [(ngModel)]="employee.depName" name="depName"> -->
+    </div>
+    <div class="form-group">
+      <label for="name">Salary-Scale</label>
+      <select class="form-control" id="salaryScale" required [(ngModel)]="employee.salaryScale" name="salaryScale">
+        <option>less than Rs.250000</option>
+        <option>Rs.25000-50000</option>
+        <option>50000-75000</option>
+        <option>75000-100000</option>
+        <option>greater than 100000</option>
+      </select>
+      <!--  <input type="text" class="form-control" id="depName" required [(ngModel)]="employee.depName" name="depName"> -->
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>You submitted successfully!</h4>
+  <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+</div>
